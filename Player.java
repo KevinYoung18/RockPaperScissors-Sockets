@@ -18,7 +18,7 @@ public class Player
 	//args are your port, followed by opponent's port
 	public static void main(String args[])
 	{
-		playerNum =  Integer.parseInt(args[0]) - Main.INIT_PORT;
+		playerNum =  Integer.parseInt(args[0]) - Main.INIT_PORT + 1;
 		
 		try 
 		{
@@ -48,7 +48,7 @@ public class Player
 		
 			//ouput results
 			int results = getTotalScore(opponent1Games, opponent2Games);
-			System.out.println("Player " + playerNum + "Score: " + results);
+			System.out.println("Player " + playerNum + " Score: " + results);
 			
 			//close resources
 			server.close();
